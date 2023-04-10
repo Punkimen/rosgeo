@@ -1,0 +1,63 @@
+.activity {
+  padding: 90px 0 90px;
+
+  @media(max-width:$md4) {
+    padding: 45px var(--space-sm) 45px;
+  }
+
+  &__title {
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 64px;
+
+    @media(max-width:$md4) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__content {}
+
+  &__tabs {
+    margin-bottom: 32px;
+  }
+
+  &__body {}
+
+  &__body-item {}
+
+  &__works {
+    @media(max-width:$md4) {
+      height: 50vh;
+      min-height: 250px;
+    }
+
+    .simplebar-content {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -10px;
+    }
+  }
+
+  &__body-link {
+    margin: 10px;
+  }
+}
+
+.title {}
+
+.tabs {
+
+  &__item {}
+
+  &__item-name {}
+
+  &__item-score {}
+
+  &__body-item {}
+}
+
+.score-active {}
+
+.show {}
+
+.type-link {}

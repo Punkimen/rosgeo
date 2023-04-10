@@ -1,0 +1,242 @@
+$md1: 1904px;
+$md2: 1264px;
+$md3: 1024px;
+$md4: 767px;
+
+:root {
+    --radius: 20px;
+    --radius-sm: 10px;
+    --box-shadow: 0 0 19px rgba(0, 0, 0, 0.08);
+    --line-height: 1.7;
+    --line-height-sm: 1.25;
+    --line-height-xs: 1.1;
+    --font-family: PFDinTextCondPro, Helvetica, Arial, sans-serif;
+    --font-family-h: PFDinTextCompPro, Helvetica, Arial, sans-serif;
+    --font-family-s: PFDinDisplayPro, Helvetica, Arial, sans-serif;
+    --font-weight: 400;
+    --font-weight-bold: 600;
+    --font-style: normal;
+    --space-2lg: 6.25em;
+    --space-xlg: 5em;
+    --space-lg: 4.0625em;
+    --space-mlg: 2.5em;
+    --space: 2.1875em;
+    --space-md: 1.25em;
+    --space-sm: 0.9375em;
+    --space-xs: 0.625em;
+    --viewport-xs: 767px;
+    --viewport-sm: 1024px;
+    --viewport-lg: 1264px;
+    --viewport-xlg: 1904px;
+    --header-height: 6.5625em;
+    --fs-h1: 4.0625em;
+    --fs-h2: 3.125em;
+    --fs-h3: 2.125em;
+    --fs-h35: 1.625em;
+    --fs-h4: 1.25em;
+    --fs-h5: 1.125em;
+    --fs-h6: .875em;
+    --fs-main: 1em;
+    --fs-small: .875em;
+    --fs-small-sm: .75em;
+    --fs-small-xs: .625em;
+    --color-accent: #ffdb1c;
+    --color-accent-dark: #e4aa00;
+    --color-accent-light: #e5b739;
+    --color-light: #f6f6f6;
+    --color-default: #fff;
+    --color-success: #20a034;
+    --color-error: #a02040;
+    --color-primary: #333;
+    --color-dark: #383838;
+    --color-info: #e3eaf2;
+    --color-darkly: #666;
+    --color-disabled: #999;
+    --color-border: #dbe6f3;
+    --color-main: #333;
+    --color-secondary: #091c48;
+}
+
+html,
+body {
+    height: 100%;
+    box-sizing: border-box;
+
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: var(--font-family-s);
+    background: (var(--color-default));
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2em;
+    color: var(--color-main);
+    overflow-x: hidden;
+    position: relative;
+
+    @media(max-width:$md4) {
+        font-size: 12px;
+    }
+
+    &.overlay {
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+
+.page {
+    // overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    fill: var(--color-dark);
+
+
+}
+
+.header-space {
+    width: 100%;
+    min-height: var(--header-height);
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+    position: relative;
+}
+
+.title {
+    font-family: var(--font-family-h);
+    font-weight: 500;
+    line-height: 1.2em;
+}
+
+h2.title {
+    font-size: var(--fs-h2);
+    font-size: 65px;
+    text-transform: uppercase;
+
+    @media(max-width: $md4) {
+        font-size: 32px;
+    }
+}
+
+h3.title {
+    font-size: 48px;
+    text-transform: uppercase;
+
+    @media(max-width: $md4) {
+        font-size: 32px;
+    }
+}
+
+h4.title {
+    font-size: 40px;
+    text-transform: uppercase;
+
+    @media(max-width: $md4) {
+        font-size: 24px;
+    }
+}
+
+h5.title {
+    font-size: 26px;
+    text-transform: uppercase;
+
+    @media(max-width: $md4) {
+        font-size: 20px;
+    }
+}
+
+h6.title {
+    font-size: 20px;
+    text-transform: uppercase;
+
+    @media(max-width: $md4) {
+        font-size: 12px;
+    }
+}
+
+.simplebar-track.simplebar-vertical {
+    top: 0;
+    width: 2px;
+    background: var(--color-info);
+}
+
+.simplebar-track.simplebar-horizontal {
+    height: 2px;
+    background: var(--color-info);
+}
+
+.simplebar-scrollbar {
+    background-color: var(--color-main);
+}
+
+.type-link {
+    border: 1px solid var(--color-border);
+    padding: 16px 32px;
+    border-radius: 40px;
+    transition: all ease .3s;
+
+    &:hover {
+        border-color: var(--color-accent-dark);
+        color: var(--color-accent-dark)
+    }
+}
+
+[scroll-href] {
+    cursor: pointer;
+}
+
+[data-anchor] {
+    position: relative;
+
+}
+
+.mob-score {
+    display: flex;
+    position: absolute;
+    top: var(--space-sm);
+    left: var(--space-sm);
+    color: var(--color-disabled);
+
+    .current-score {
+        color: var(--color-main);
+    }
+}

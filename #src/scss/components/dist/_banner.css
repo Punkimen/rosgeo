@@ -1,0 +1,148 @@
+.banner {
+  overflow: hidden;
+  position: relative;
+}
+.banner__bg {
+  height: 540px;
+  min-height: fit-content;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.banner .container {
+  min-height: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.banner__scroll {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.banner__content {
+  flex: 0 1 100%;
+}
+.banner__content-text {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: 0;
+  margin-bottom: 24px;
+  font-size: 24px;
+  line-height: 1.4em;
+  font-weight: 500;
+  font-family: var(--font-family-h);
+  padding-right: 2vw;
+}
+.banner__content-label {
+  text-transform: uppercase;
+  position: relative;
+  padding: 16px 32px 16px 52px;
+  position: relative;
+  border: 1px solid var(--color-accent-dark);
+  width: fit-content;
+  border-radius: 40px;
+}
+.banner__content-label::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.banner__content-label::after {
+  content: "";
+  width: 100vw;
+  height: 1px;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--color-accent-dark);
+}
+
+.nav {
+  padding: 32px 0 0;
+  border-top: 1px solid var(--color-border);
+}
+.nav__list {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+}
+.nav__list .simplebar-content {
+  padding-bottom: 32px !important;
+  display: flex;
+}
+.nav__list-elem:not(:last-child) {
+  margin-right: 40px;
+}
+.nav__list-link {
+  white-space: nowrap;
+  color: var(--color-main);
+  text-transform: uppercase;
+  transition: all ease 0.3s;
+}
+.nav__list-link:hover {
+  color: var(--color-accent-dark);
+}
+
+.scroll-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20px;
+}
+.scroll-nav__top {
+  min-height: 30px;
+  margin-bottom: 80px;
+}
+.scroll-nav__text {
+  height: 20px;
+}
+.scroll-nav__score {
+  white-space: nowrap;
+  width: fit-content;
+  transform: rotate(-90deg);
+}
+.scroll-nav__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.scroll-nav__mouse {
+  margin-bottom: 40px;
+  position: relative;
+}
+.scroll-nav__mouse::after {
+  margin: 5px auto;
+  content: "";
+  display: block;
+  width: 1px;
+  height: 20px;
+  background: #fff;
+}
+.scroll-nav__text {
+  height: 20px;
+  width: fit-content;
+  white-space: nowrap;
+  width: fit-content;
+  transform: rotate(-90deg);
+  line-height: 1em;
+}
+
+.no-webp .banner__bg {
+  background-image: url(../img/banner_bg.jpg);
+}
+
+.webp .banner__bg {
+  background-image: url(../img/banner_bg.webp);
+}

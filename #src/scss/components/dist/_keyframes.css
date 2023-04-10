@@ -1,0 +1,17 @@
+@keyframes shake-vertical {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  10%, 30%, 50%, 70% {
+    transform: translateY(-4px);
+  }
+  20%, 40%, 60% {
+    transform: translateY(4px);
+  }
+  80% {
+    transform: translateY(2.4px);
+  }
+  90% {
+    transform: translateY(-2.4px);
+  }
+}
