@@ -1052,6 +1052,7 @@ h6.title {
   position: absolute;
   top: 0;
   right: 0;
+  padding-right: 83px;
 }
 
 .releases-item {

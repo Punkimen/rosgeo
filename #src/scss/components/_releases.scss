@@ -24,6 +24,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    padding-right: 83px;
 
     @media(max-width:$md3) {
       display: none !important;
