@@ -206,9 +206,7 @@
     margin-bottom: 40px;
     position: relative;
 
-    img {
-      animation: shake-vertical 3 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-    }
+    img {}
 
     &::after {
       margin: 5px auto;
@@ -227,6 +225,7 @@
     width: fit-content;
     transform: rotate(-90deg);
     line-height: 1em;
+    animation: flash 1 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
   }
 }
 

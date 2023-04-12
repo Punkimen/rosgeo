@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.mobNav = exports.navInit = void 0;
+exports.mobNav = exports.navInit = exports.screenInit = void 0;
 
 var _toggleClass = require("./toggleClass.js");
 
@@ -18,6 +18,8 @@ var screenInit = function screenInit(current, total) {
   });
 };
 
+exports.screenInit = screenInit;
+
 var navInit = function navInit() {
   // nav
   var sections = document.querySelectorAll("[data-anchor]");
@@ -27,16 +29,7 @@ var navInit = function navInit() {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
         var currentIndex = sectionsArray.indexOf(entry.target);
-        screenInit(currentIndex + 1, length);
-      }
-
-      var id = entry.target.getAttribute("data-anchor");
-
-      if (entry.intersectionRatio > 0) {
-        var link = document.querySelector(".navigation a[scroll-href=\"".concat(id, "\"]"));
-        link.classList.add("current");
-      } else {
-        document.querySelector(".navigation a[scroll-href=\"".concat(id, "\"]")).classList.remove("current");
+        screenInit(currentIndex, length);
       }
     });
   }); // Track all sections that have an `id` applied

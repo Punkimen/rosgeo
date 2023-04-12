@@ -1,6 +1,6 @@
 import {addClass} from "./toggleClass.js";
 
-const screenInit = (current, total) => {
+export const screenInit = (current, total) => {
 	const currentScore = document.querySelectorAll(".current-score");
 	const totalScore = document.querySelectorAll(".total-score");
 
@@ -22,19 +22,7 @@ export const navInit = () => {
 		entries.forEach((entry) => {
 			if (entry.isIntersecting) {
 				const currentIndex = sectionsArray.indexOf(entry.target);
-				screenInit(currentIndex + 1, length);
-			}
-			const id = entry.target.getAttribute("data-anchor");
-			if (entry.intersectionRatio > 0) {
-				const link = document.querySelector(
-					`.navigation a[scroll-href="${id}"]`,
-				);
-
-				link.classList.add("current");
-			} else {
-				document
-					.querySelector(`.navigation a[scroll-href="${id}"]`)
-					.classList.remove("current");
+				screenInit(currentIndex, length);
 			}
 		});
 	});
