@@ -79,6 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
       (0, _navigation.setCurrent)(this.index - 1);
       (0, _navigation.showHideNav)(this.index); // navParent.textContent = `${createNavigation(navigationAnchors)}`;
 
+      (0, _scrollNavigation.screenInit)(this.index, this.anchors.length);
       var centeredSection = document.querySelectorAll(".section_centered");
       var rightSection = document.querySelectorAll(".section_right");
       centeredSection.forEach(function (section) {
@@ -103,7 +104,8 @@ document.addEventListener("DOMContentLoaded", function () {
   pageSlider.on("scroll.start", function (data) {
     (0, _navigation.setCurrent)(data.index - 1);
     (0, _navigation.showHideNav)(data.index);
-    (0, _scrollNavigation.navInit)();
+    console.log(data);
+    (0, _scrollNavigation.screenInit)(data.index, pageSlider.anchors.length);
   });
   var scrollBarElems = document.querySelectorAll(".scroll-text");
   scrollBarElems.forEach(function (el) {

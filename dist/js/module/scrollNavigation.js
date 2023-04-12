@@ -1,11 +1,12 @@
 import {addClass} from "./toggleClass.js";
 
 export const screenInit = (current, total) => {
+	console.log(current);
 	const currentScore = document.querySelectorAll(".current-score");
 	const totalScore = document.querySelectorAll(".total-score");
 
 	currentScore.forEach((score) => {
-		score.innerText = current < 10 ? `0${current}` : current;
+		score.innerText = current < 10 ? `0${current + 1}` : current + 1;
 	});
 	totalScore.forEach((score) => {
 		score.innerText = total < 10 ? `0${total}` : total;

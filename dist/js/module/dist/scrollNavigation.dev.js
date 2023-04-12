@@ -8,10 +8,11 @@ exports.mobNav = exports.navInit = exports.screenInit = void 0;
 var _toggleClass = require("./toggleClass.js");
 
 var screenInit = function screenInit(current, total) {
+  console.log(current);
   var currentScore = document.querySelectorAll(".current-score");
   var totalScore = document.querySelectorAll(".total-score");
   currentScore.forEach(function (score) {
-    score.innerText = current < 10 ? "0".concat(current) : current;
+    score.innerText = current < 10 ? "0".concat(current + 1) : current + 1;
   });
   totalScore.forEach(function (score) {
     score.innerText = total < 10 ? "0".concat(total) : total;

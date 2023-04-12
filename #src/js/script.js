@@ -8,7 +8,7 @@ import {
 	setCurrent,
 	showHideNav,
 } from "./module/navigation.js";
-import {mobNav, navInit} from "./module/scrollNavigation.js";
+import {mobNav, navInit, screenInit} from "./module/scrollNavigation.js";
 import {setContainerWidth} from "./module/setContainerWidth.js";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			setCurrent(this.index - 1);
 			showHideNav(this.index);
 			// navParent.textContent = `${createNavigation(navigationAnchors)}`;
-
+			screenInit(this.index, this.anchors.length);
 			const centeredSection =
 				document.querySelectorAll(".section_centered");
 			const rightSection = document.querySelectorAll(".section_right");
@@ -110,7 +110,8 @@ document.addEventListener("DOMContentLoaded", () => {
 	pageSlider.on("scroll.start", (data) => {
 		setCurrent(data.index - 1);
 		showHideNav(data.index);
-		navInit();
+		console.log(data);
+		screenInit(data.index, pageSlider.anchors.length);
 	});
 
 	const scrollBarElems = document.querySelectorAll(".scroll-text");
