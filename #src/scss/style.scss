@@ -39,6 +39,11 @@ scrollbar .scrollbar-thumb {
   min-height: 670px;
   padding-top: var(--header-height);
   height: 100vh;
+
+  @media(max-height: 600px) {
+    height: auto;
+  }
+
   // display: flex;
   // justify-content: center;
   // flex-direction: column;
@@ -58,5 +63,9 @@ scrollbar .scrollbar-thumb {
 
   @media(max-width: $md3) {
     padding-left: 40px !important;
+  }
+
+  @media(max-width: $md4) {
+    padding-left: var(--space-sm) !important;
   }
 }

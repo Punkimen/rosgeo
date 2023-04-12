@@ -1,6 +1,6 @@
 .about {
   @media(max-width:$md4) {
-    padding: var(--header-height) var(--space-sm) 45px;
+    padding: var(--header-height) var(--space-sm) 45px var(--space-sm);
   }
 
   &__title {
@@ -25,12 +25,21 @@
     min-height: 100px;
     height: 40vh;
 
-    @media(min-height: 800px) and (max-width:$md3) {
-      height: 72vh;
+    @media(min-height: 800px) {
+      height: 60vh;
     }
 
-    @media(max-width:$md3) {
+
+    @media(max-width:$md3) and (min-height:700px) {
       height: 55vh;
+    }
+
+    @media(max-height: 700px) and (max-width:$md3) {
+      height: 50vh;
+    }
+
+    @media(max-height: 600px) {
+      height: auto;
     }
 
     .simplebar-content {
@@ -61,12 +70,27 @@
   }
 
   &__adresses {
-    min-height: 250px;
+    min-height: 150px;
     height: 50vh;
 
-    @media(max-width:$md3) {
-      min-height: 150px;
-      height: 40vh;
+    @media(min-height: 800px) {
+      height: 60vh;
+    }
+
+    @media(max-width:$md3) and (min-height:700px) {
+      height: 30vh;
+    }
+
+    @media(max-width:$md4) and (min-height:700px) {
+      height: 60vh;
+    }
+
+    @media(max-height: 700px) and (max-width:$md3) {
+      height: 50vh;
+    }
+
+    @media(max-height: 600px) {
+      height: auto;
     }
 
     .scroll-content {

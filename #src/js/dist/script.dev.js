@@ -114,13 +114,20 @@ document.addEventListener("DOMContentLoaded", function () {
       pageSlider.events.touch = true;
     });
   });
+  var slidersElems = document.querySelectorAll(".swiper-wrapper");
+  slidersElems.forEach(function (el) {
+    (0, _fullPage.cbMouseInner)(el, function () {
+      pageSlider.events.touch = false;
+    });
+    (0, _fullPage.cbMouseLeave)(el, function () {
+      pageSlider.events.touch = true;
+    });
+  });
   (0, _fullPage.cbHeight)(600, function () {
     pageSlider.destroy();
   }, function () {
     pageSlider.init();
-  });
-  var elems = document.querySelectorAll(".scroll-text");
-  elems.forEach(function (el) {}); // /////////////
+  }); // /////////////
 
   var sections = document.querySelectorAll("[data-anchor]");
   (0, _scrollNavigation.mobNav)(sections);

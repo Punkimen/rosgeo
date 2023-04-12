@@ -122,6 +122,15 @@ document.addEventListener("DOMContentLoaded", () => {
 			pageSlider.events.touch = true;
 		});
 	});
+	const slidersElems = document.querySelectorAll(".swiper-wrapper");
+	slidersElems.forEach((el) => {
+		cbMouseInner(el, () => {
+			pageSlider.events.touch = false;
+		});
+		cbMouseLeave(el, () => {
+			pageSlider.events.touch = true;
+		});
+	});
 	cbHeight(
 		600,
 		() => {
@@ -131,8 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			pageSlider.init();
 		},
 	);
-	const elems = document.querySelectorAll(".scroll-text");
-	elems.forEach((el) => {});
+
 	// /////////////
 
 	const sections = document.querySelectorAll("[data-anchor]");

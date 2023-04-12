@@ -68,6 +68,10 @@
     position: relative;
     padding-top: 105px;
 
+    @media(max-height: 700px) {
+      padding-top: 75px;
+    }
+
     .swiper-wrapper {
       display: flex;
       transform: translate3d(0px, 0px, 0px);
