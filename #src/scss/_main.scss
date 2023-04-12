@@ -4,7 +4,7 @@
   width: 100%;
   margin: 0 auto;
   flex: 1 0 auto;
-  display: grid;
+  // display: grid;
   grid-template-columns: 1fr 200px minmax(320px, 1000px) 1fr;
 
   @media(max-width: $md3) {
@@ -21,43 +21,7 @@
     padding-right: var(--space-sm);
   }
 
-  &__navigation {
-    padding-right: 66px;
-    position: relative;
-    margin-top: 150px;
-    grid-row: 1/10;
-    grid-column: 2/3;
 
-    @media(max-width:$md3) {
-      margin-top: 250px;
-      padding-right: 0;
-    }
-
-    @media(max-width:$md4) {
-      display: none;
-    }
-
-    .sticky {
-      position: sticky;
-      top: 40px;
-    }
-
-    .scroll-nav__score {
-      @media(max-width:$md3) {
-        width: 14px;
-        transform: rotate(-90deg);
-      }
-    }
-
-    .scroll-nav__top {
-      transform: translateX(-50%);
-      position: absolute;
-      top: 0;
-      left: 0;
-
-
-    }
-  }
 
   &__content {
     @media(max-width:$md3) {
@@ -72,59 +36,40 @@
   }
 }
 
-.navigation {
-  width: 100%;
+.pg-vertical .pg-pips {
 
+  // .scroll-nav__top {
+  //   margin-bottom: 0;
+  //   position: relative;
+  //   transform: translateX(-100%);
+  // }
 
-  &__list {
-    padding-top: 88px;
-
-    @media(max-width:$md3) {
-      padding-top: 50px;
-    }
+  .scroll-nav__top {
+    transform: translateX(-50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 0;
   }
 
-  &__list-elem {
-    position: relative;
-
-    @media(max-width:$md3) {
-      &:not(:first-child) {
-        margin-top: -5px;
-      }
-    }
+  @media(max-width:$md3) {
+    padding-right: 0;
   }
 
-  &__list-link {
-    color: var(--color-disabled);
-    padding-top: 16px;
-    padding-left: 32px;
-    padding-right: 0px;
-    padding-bottom: 16px;
-    border-left: 1px solid var(--color-disabled);
-    transition: all ease .3s;
-    text-transform: uppercase;
+  @media(max-width:$md4) {
+    display: none;
+  }
 
+  .scroll-nav__score {
     @media(max-width:$md3) {
       width: 14px;
-      overflow: hidden;
-      position: relative;
-    }
-
-    @media(max-width:$md4) {
-      display: none;
-    }
-
-    &.current {
-      color: var(--color-dark);
-      border-left: 1px solid var(--color-dark);
-    }
-
-    &:hover {
-      border-left: 1px solid var(--color-accent-dark);
-      color: var(--color-accent-dark);
+      transform: rotate(-90deg);
     }
   }
+
+
 }
+
 
 .scroll-nav {
 
@@ -132,3 +77,7 @@
 
   &__score {}
 }
+
+// .global-slider {
+//   width: 100vw;
+// }

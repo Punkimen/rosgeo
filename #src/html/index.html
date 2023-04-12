@@ -12,110 +12,46 @@
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
 			rel="stylesheet"
 		/>
-		<link
-			rel="stylesheet"
-			href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
-		/>
+
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
 		/>
-		<link rel="stylesheet" href="css/aos.css" />
+		<link rel="stylesheet" href="css/aos.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/pageable@latest/dist/pageable.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/5.0.1/smooth-scrollbar.css"
+			integrity="sha512-QyDQGQiuKrcAtAIPIaO+IBZNkmb/+U5dyMY2Qe64mhjKiF74QWuDhjrqgkbacfQqqFB2+fwWnan5TQHlb0mfUg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 
 	<body>
-		<div class="page">
-			<header class="header"></header>
-			<div class="header-space"></div>
+		<div id="pagepiling" class="global-slider">
 			@@include("./components/_hero.html")
-			@@include("./components/_banner.html")
-			<main class="main">
-				<div class="main-margins"></div>
-				<nav class="main__navigation navigation" data-aos="fade-right">
-					<div class="sticky">
-						<div class="scroll-nav__top">
-							<div class="scroll-nav__score">
-								<span class="current-score">01</span> /
-								<span class="total-score">07</span>
-							</div>
-						</div>
-						<ul class="navigation__list">
-							<li class="navigation__list-elem">
-								<a
-									scroll-href="about"
-									class="navigation__list-link"
-									>О компании</a
-								>
-							</li>
-							<li class="navigation__list-elem">
-								<a
-									scroll-href="history"
-									class="navigation__list-link"
-									>История</a
-								>
-							</li>
-							<li class="navigation__list-elem">
-								<a
-									scroll-href="activity"
-									class="navigation__list-link"
-									>Деятельность</a
-								>
-							</li>
-							<li class="navigation__list-elem">
-								<a
-									scroll-href="directions"
-									class="navigation__list-link"
-									>Руководство</a
-								>
-							</li>
-							<li class="navigation__list-elem">
-								<a
-									scroll-href="info"
-									class="navigation__list-link"
-									>Раскрытие информации</a
-								>
-							</li>
-							<li class="navigation__list-elem">
-								<a
-									scroll-href="releases"
-									class="navigation__list-link"
-									>Пресс-релизы</a
-								>
-							</li>
-							<li class="navigation__list-elem">
-								<a
-									scroll-href="contacts"
-									class="navigation__list-link"
-									>Контакты</a
-								>
-							</li>
-						</ul>
-					</div>
-				</nav>
-				@@include("./components/_about.html")
-				@@include("./components/_history.html")
-				<div class="main-margins"></div>
-				@@include("./components/_activity.html")
-				<div class="main-margins"></div>
-				@@include("./components/_direction.html")
-				<div class="main-margins"></div>
-				@@include("./components/_info.html")
-				<div class="main-margins"></div>
-				<div class="main-margins"></div>
-				@@include("./components/_releases.html")
-				<div class="main-margins"></div>
-				@@include("./components/_contacts.html")
-			</main>
+			@@include("./components/_about.html")
+			@@include("./components/_history.html")
+			@@include("./components/_activity.html")
+			@@include("./components/_direction.html")
+			@@include("./components/_info.html")
+			@@include("./components/_releases.html")
+			@@include("./components/_contacts.html")
 		</div>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/5.0.1/smooth-scrollbar.js"
+			integrity="sha512-fNprFnoeUomE0+m0nYtgoIrlUm81yW4dtuBVhMluVYlbpYEGMfEbUJJN4muTYiltfmDyWkQ5TpmwmIhdFK7qEA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 		<script src="js/libs/simple-webp.min.js"></script>
-		<script src="js/libs/aos.min.js"></script>
-		<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
-		<script
-			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-			defer
-		></script>
+		<script src="https://unpkg.com/pageable@latest/dist/pageable.min.js"></script>
 		<script src="js/script.js" type="module" defer></script>
 	</body>
 </html>

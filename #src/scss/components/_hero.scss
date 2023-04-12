@@ -1,10 +1,12 @@
 .hero {
-    padding: 56px 0 32px;
+    display: flex;
+    flex-direction: column;
 
     &__wrapper {
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
+        margin-bottom: 20px;
 
         @media(max-width: $md3) {
             display: block;
@@ -30,6 +32,10 @@
         @media(max-width: $md4) {
             font-size: 32px;
             margin-bottom: 48px;
+        }
+
+        @media(max-height: 640px) {
+            font-size: 40px;
         }
     }
 

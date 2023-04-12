@@ -1,13 +1,17 @@
 .derictions {
-  grid-column: 3/5;
+
   padding: 90px 0 90px;
 
   @media(max-width:$md4) {
-    padding: 45px 0 45px var(--space-sm);
+    padding: var(--header-height) 0 45px var(--space-sm);
   }
 
   &__title {
     margin-bottom: 64px;
+
+    @media(max-height:700px) {
+      margin-bottom: 20px;
+    }
 
     @media(max-width:$md4) {
       margin-bottom: 32px;

@@ -1,14 +1,18 @@
 .activity {
-  padding: 90px 0 90px;
+  // padding: 90px 0 90px;
 
   @media(max-width:$md4) {
-    padding: 45px var(--space-sm) 45px;
+    // padding: var(--header-height) var(--space-sm) 45px;
   }
 
   &__title {
     max-width: 400px;
     width: 100%;
     margin-bottom: 64px;
+
+    @media(max-height:700px) {
+      margin-bottom: 20px;
+    }
 
     @media(max-width:$md4) {
       margin-bottom: 32px;
@@ -26,9 +30,11 @@
   &__body-item {}
 
   &__works {
-    @media(max-width:$md4) {
-      height: 50vh;
-      min-height: 250px;
+    height: 40vh;
+    min-height: 250px;
+
+    @media(max-width:$md3) {
+      height: 55vh;
     }
 
     .simplebar-content {

@@ -1,20 +1,21 @@
 .history {
   position: relative;
-  padding: 90px 0 90px;
-  grid-column: 3/5;
+  // padding: 90px 0 90px;
 
-  @media(max-width:$md4) {
-    padding: 45px 0 45px var(--space-sm);
-  }
+
+  // @media(max-width:$md4) {
+  //   padding: 45px 0 45px var(--space-sm);
+  // }
 
   &__slider {
     max-width: 571px;
     min-width: 148px;
     width: 41.8vw;
     position: absolute;
-    top: 0;
+    top: var(--header-height);
     right: 0;
     padding-bottom: 80px;
+    z-index: 3;
   }
 
   &__slider-item {
@@ -51,6 +52,11 @@
     user-select: none;
     position: relative;
     z-index: 2;
+
+    @media(max-height:700px) {
+
+      margin-bottom: 20px;
+    }
 
     @media(max-width:$md4) {
       width: 50vw;
@@ -117,6 +123,7 @@
 
 .slider-btns {
   display: flex;
+
 }
 
 .slider-btn {

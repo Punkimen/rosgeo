@@ -12,3 +12,51 @@
 @import './components/releases';
 @import './components/contacts';
 @import './components/keyframes';
+@import './components/fullpage';
+
+.scroll-text {
+  overflow: auto;
+
+  .scroll-content {
+    padding-right: 10px;
+  }
+}
+
+[data-scrollbar] .scrollbar-track,
+[scrollbar] .scrollbar-track,
+scrollbar .scrollbar-track {
+  opacity: 1;
+  width: 2px;
+}
+
+[data-scrollbar] .scrollbar-thumb,
+[scrollbar] .scrollbar-thumb,
+scrollbar .scrollbar-thumb {
+  background: var(--color-main);
+}
+
+[data-anchor] {
+  min-height: 670px;
+  padding-top: var(--header-height);
+  height: 100vh;
+  // display: flex;
+  // justify-content: center;
+  // flex-direction: column;
+}
+
+[data-scrollbar] .scrollbar-thumb,
+[scrollbar] .scrollbar-thumb,
+scrollbar .scrollbar-thumb {
+  height: 2px;
+}
+
+.section_centered,
+.section_right {
+  @media(max-width: 1600px) {
+    padding-left: 200px !important;
+  }
+
+  @media(max-width: $md3) {
+    padding-left: 40px !important;
+  }
+}

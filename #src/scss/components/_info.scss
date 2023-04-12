@@ -2,7 +2,7 @@
   padding: 90px 0 90px;
 
   @media(max-width:$md4) {
-    padding: 45px var(--space-sm) 45px;
+    padding: var(--header-height) var(--space-sm) 45px;
   }
 
   &__title {
@@ -30,10 +30,18 @@
     display: block;
     overflow-y: hidden;
 
+    .scroll-content {
+      display: block;
+    }
+
     @media(max-width:$md3) {
-      display: flex;
+
       margin-right: 0;
       margin-bottom: 32px;
+
+      .scroll-content {
+        display: flex;
+      }
     }
 
     .tabs__item {
@@ -58,8 +66,16 @@
   &__docs {}
 
   &__docs-list {
-    min-height: 250px;
-    height: 50vh;
+    min-height: 200px;
+    height: 40vh;
+
+    @media(min-height: 800px) {
+      height: 63vh;
+    }
+
+    @media(max-width:$md3) {
+      height: 50vh;
+    }
   }
 
   &__docs-item {}

@@ -1,4 +1,9 @@
 export const initSlider = () => {
+	// page slider
+	// const globalSlider = new Swiper("#global_slider", {
+	// 	slidesPerView: "1",
+	// 	direction: "vertical",
+	// });
 	// history slider
 	const historyPhotoSlider = new Swiper("#history_photo_slider", {
 		slidesPerView: 1,

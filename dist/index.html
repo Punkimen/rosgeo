@@ -12,176 +12,117 @@
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
 			rel="stylesheet"
 		/>
-		<link
-			rel="stylesheet"
-			href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
-		/>
+
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
 		/>
-		<link rel="stylesheet" href="css/aos.css" />
+		<link rel="stylesheet" href="css/aos.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/pageable@latest/dist/pageable.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/5.0.1/smooth-scrollbar.css"
+			integrity="sha512-QyDQGQiuKrcAtAIPIaO+IBZNkmb/+U5dyMY2Qe64mhjKiF74QWuDhjrqgkbacfQqqFB2+fwWnan5TQHlb0mfUg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 
 	<body>
-		<div class="page">
-			<header class="header"></header>
-			<div class="header-space"></div>
-			<section class="hero">
+		<div id="pagepiling" class="global-slider">
+			<section class="hero" data-anchor="hero">
 	<div class="container">
 		<div class="hero__wrapper">
-			<h1 class="hero__title" data-aos="fade-right">
+			<h1 class="hero__title">
 				Акционерное общество «Дальневосточное ПГО»
 			</h1>
-			<div class="hero__adress" data-aos="fade-left">
+			<div class="hero__adress">
 				680041, г. Хабаровск, ул. Балашовская, д.15
 			</div>
 		</div>
 	</div>
-</section>
-
-			<section class="banner">
-	<nav class="nav" data-aos="fade-up">
-		<div class="container">
-			<ul class="nav__list" data-simplebar>
-				<li class="nav__list-elem">
-					<a scroll-href="about" class="nav__list-link">О компании</a>
-				</li>
-				<li class="nav__list-elem">
-					<a scroll-href="history" class="nav__list-link">История</a>
-				</li>
-				<li class="nav__list-elem">
-					<a scroll-href="activity" class="nav__list-link"
-						>Деятельность</a
-					>
-				</li>
-				<li class="nav__list-elem">
-					<a scroll-href="directions" class="nav__list-link"
-						>Руководство</a
-					>
-				</li>
-				<li class="nav__list-elem">
-					<a scroll-href="info" class="nav__list-link"
-						>Раскрытие информации</a
-					>
-				</li>
-				<li class="nav__list-elem">
-					<a scroll-href="releases" class="nav__list-link"
-						>Пресс-релизы</a
-					>
-				</li>
-				<li class="nav__list-elem">
-					<a scroll-href="contacts" class="nav__list-link"
-						>Контакты</a
-					>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	<div class="banner__bg">
-		<div class="container">
-			<div class="banner__scroll scroll-nav">
-				<div class="scroll-nav__top">
-					<div class="scroll-nav__score">
-						<span class="current-score">01</span> /
-						<span class="total-score">07</span>
-					</div>
-				</div>
-				<div class="scroll-nav__bottom">
-					<div class="scroll-nav__mouse">
-						<img src="img/icons/mouse.svg" alt="mouse" />
-					</div>
-					<div class="scroll-nav__text">Листайте вниз</div>
-				</div>
+	<div class="banner">
+		<nav class="nav">
+			<div class="container">
+				<ul class="nav__list scroll-text">
+					<li class="nav__list-elem">
+						<a href="#about" class="nav__list-link">О компании</a>
+					</li>
+					<li class="nav__list-elem">
+						<a href="#history" class="nav__list-link">История</a>
+					</li>
+					<li class="nav__list-elem">
+						<a href="#activity" class="nav__list-link"
+							>Деятельность</a
+						>
+					</li>
+					<li class="nav__list-elem">
+						<a href="#directions" class="nav__list-link"
+							>Руководство</a
+						>
+					</li>
+					<li class="nav__list-elem">
+						<a href="#info" class="nav__list-link"
+							>Раскрытие информации</a
+						>
+					</li>
+					<li class="nav__list-elem">
+						<a href="#releases" class="nav__list-link"
+							>Пресс-релизы</a
+						>
+					</li>
+					<li class="nav__list-elem">
+						<a href="#contacts" class="nav__list-link">Контакты</a>
+					</li>
+				</ul>
 			</div>
-			<div class="banner__content">
-				<div class="banner__content-text" data-aos="fade-left">
-					<p>
-						«Дальневосточное Производственно-геологическое
-						объединение» - крупнейшее геологоразведочное объединение
-						на Дальнем Востоке, образованное путем объединения
-						четырех старейших дочерних предприятий «Росгеологии»: АО
-						«Приморгеология» (г. Владивосток), АО «Дальгеофизика»,
-						(г. Хабаровск), АО «Амургеология» (г. Благовещенск), АО
-						«СахГРЭ» (г. Южно-Сахалинск).
-					</p>
+		</nav>
+		<div class="banner__bg">
+			<div class="container">
+				<div class="banner__scroll scroll-nav">
+					<div class="scroll-nav__top">
+						<div class="scroll-nav__score">
+							<span class="current-score">01</span> /
+							<span class="total-score">07</span>
+						</div>
+					</div>
+					<div class="scroll-nav__bottom">
+						<div class="scroll-nav__mouse">
+							<img src="img/icons/mouse.svg" alt="mouse" />
+						</div>
+						<div class="scroll-nav__text">Листайте вниз</div>
+					</div>
 				</div>
-				<div class="banner__content-name">
-					<div class="banner__content-label">О компании</div>
+				<div class="banner__content">
+					<div class="banner__content-text">
+						<p>
+							«Дальневосточное Производственно-геологическое
+							объединение» - крупнейшее геологоразведочное
+							объединение на Дальнем Востоке, образованное путем
+							объединения четырех старейших дочерних предприятий
+							«Росгеологии»: АО «Приморгеология» (г. Владивосток),
+							АО «Дальгеофизика», (г. Хабаровск), АО
+							«Амургеология» (г. Благовещенск), АО «СахГРЭ» (г.
+							Южно-Сахалинск).
+						</p>
+					</div>
+					<div class="banner__content-name">
+						<div class="banner__content-label">О компании</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-			<main class="main">
-				<div class="main-margins"></div>
-				<nav class="main__navigation navigation" data-aos="fade-right">
-					<div class="sticky">
-						<div class="scroll-nav__top">
-							<div class="scroll-nav__score">
-								<span class="current-score">01</span> /
-								<span class="total-score">07</span>
-							</div>
-						</div>
-						<ul class="navigation__list">
-							<li class="navigation__list-elem">
-								<a
-									scroll-href="about"
-									class="navigation__list-link"
-									>О компании</a
-								>
-							</li>
-							<li class="navigation__list-elem">
-								<a
-									scroll-href="history"
-									class="navigation__list-link"
-									>История</a
-								>
-							</li>
-							<li class="navigation__list-elem">
-								<a
-									scroll-href="activity"
-									class="navigation__list-link"
-									>Деятельность</a
-								>
-							</li>
-							<li class="navigation__list-elem">
-								<a
-									scroll-href="directions"
-									class="navigation__list-link"
-									>Руководство</a
-								>
-							</li>
-							<li class="navigation__list-elem">
-								<a
-									scroll-href="info"
-									class="navigation__list-link"
-									>Раскрытие информации</a
-								>
-							</li>
-							<li class="navigation__list-elem">
-								<a
-									scroll-href="releases"
-									class="navigation__list-link"
-									>Пресс-релизы</a
-								>
-							</li>
-							<li class="navigation__list-elem">
-								<a
-									scroll-href="contacts"
-									class="navigation__list-link"
-									>Контакты</a
-								>
-							</li>
-						</ul>
-					</div>
-				</nav>
-				<section data-anchor="about" class="about">
-	<h2 class="about__title title" data-aos="fade-down">О Компаниии</h2>
+			<section data-anchor="about" class="about section_centered">
+	<h2 class="about__title title">О Компаниии</h2>
 	<div class="about__content">
-		<div class="about__content-tabs tabs" data-aos="fade-up">
+		<div class="about__content-tabs tabs scroll-text">
 			<a href="#" class="tabs__item current">
 				<span class="tabs__item-name">Краткое описание</span>
 			</a>
@@ -192,9 +133,9 @@
 				>
 			</a>
 		</div>
-		<div class="about__body" data-aos="fade-left">
+		<div class="about__body">
 			<div class="about__body-item tabs__body-item show">
-				<div class="about__body-text scroll-text" data-simplebar>
+				<div class="about__body-text scroll-text">
 					<p>
 						АО «Ставропольнефтегеофизика» прошло длинный путь
 						развития ‑ от треста «Ставропольнефтегеофизика»,
@@ -291,7 +232,7 @@
 				<h3 class="about__subtitle title">
 					Акционерное общество «Дальневосточное ПГО»
 				</h3>
-				<div class="about__adresses" data-simplebar="">
+				<div class="about__adresses scroll-text">
 					<a href="" class="about__adresses-link">
 						<h5 class="title about__adresses-name">
 							АО «Амургеология»
@@ -358,12 +299,8 @@
 	</div>
 </section>
 
-				<section class="history" data-anchor="history">
-	<div
-		id="history_photo_slider"
-		class="history__slider swiper"
-		data-aos="fade-left"
-	>
+			<section class="history section_right" data-anchor="history">
+	<div id="history_photo_slider" class="history__slider swiper">
 		<div class="swiper-wrapper">
 			<div class="history__slider-item swiper-slide">
 				<noscript data-webp>
@@ -395,14 +332,11 @@
 		</div>
 	</div>
 	<div class="history__body">
-		<h2 class="history__title title" data-aos="fade-down">
-			Историческая хронология
-		</h2>
+		<h2 class="history__title title">Историческая хронология</h2>
 		<div class="history__content">
 			<div
 				id="history_info_slider"
 				class="history__content-slider swiper"
-				data-aos="fade-up"
 			>
 				<div class="swiper-wrapper">
 					<div class="history__content-item swiper-slide">
@@ -474,13 +408,10 @@
 	</div>
 </section>
 
-				<div class="main-margins"></div>
-				<section class="activity" data-anchor="activity">
-	<h2 class="activity__title title" data-aos="fade-down">
-		Направления деятельности
-	</h2>
+			<section class="activity section_centered" data-anchor="activity">
+	<h2 class="activity__title title">Направления деятельности</h2>
 	<div class="activity__content">
-		<div class="activity__tabs tabs" data-aos="fade-up">
+		<div class="activity__tabs tabs scroll-text">
 			<a href="#" class="tabs__item current">
 				<span class="tabs__item-name">Бурение</span>
 				<span class="tabs__item-score">
@@ -500,9 +431,9 @@
 				>
 			</a>
 		</div>
-		<div class="activity__body" data-aos="fade-left">
+		<div class="activity__body">
 			<div class="activity__body-item tabs__body-item show">
-				<div class="activity__works" data-simplebar>
+				<div class="activity__works scroll-text">
 					<a href="#" class="activity__body-link type-link"
 						>Поисковые, оценочные, разведочные работы на различные
 						виды полезных ископаемых</a
@@ -538,7 +469,7 @@
 				</div>
 			</div>
 			<div class="activity__body-item tabs__body-item">
-				<div class="activity__works" data-simplebar>
+				<div class="activity__works scroll-text">
 					<a href="#" class="activity__body-link type-link"
 						>Поисковые, оценочные, разведочные работы на различные
 						виды полезных ископаемых</a
@@ -577,7 +508,7 @@
 				</div>
 			</div>
 			<div class="activity__body-item tabs__body-item">
-				<div class="activity__works" data-simplebar>
+				<div class="activity__works scroll-text">
 					<a href="#" class="activity__body-link type-link"
 						>Структурно-тектонические, геолого-экологические
 						исследования</a
@@ -620,10 +551,9 @@
 	</div>
 </section>
 
-				<div class="main-margins"></div>
-				<section class="derictions" data-anchor="directions">
-	<h2 class="derictions__title title" data-aos="fade-down">Руководство</h2>
-	<div class="derictions__head" data-aos="fade-left">
+			<section class="derictions section_right" data-anchor="directions">
+	<h2 class="derictions__title title">Руководство</h2>
+	<div class="derictions__head">
 		<div class="derictions__head-photo"></div>
 		<div class="derictions__head-content">
 			<h3 class="derictions__head-name title">
@@ -633,11 +563,7 @@
 			<div class="derictions__head-descr">Управляющий директор</div>
 		</div>
 	</div>
-	<div
-		id="direction_slider"
-		class="derictions__slider swiper"
-		data-aos="fade-left"
-	>
+	<div id="direction_slider" class="derictions__slider swiper">
 		<div class="swiper-wrapper">
 			<div class="derictions__slider-slide swiper-slide">
 				<h4 class="derictions__slider-name title">
@@ -703,11 +629,10 @@
 	</div>
 </section>
 
-				<div class="main-margins"></div>
-				<section class="info" data-anchor="info">
-	<h2 class="info__title title" data-aos="fade-down">Раскрытие информации</h2>
+			<section class="info section_centered" data-anchor="info">
+	<h2 class="info__title title">Раскрытие информации</h2>
 	<div class="info__wrapper">
-		<div class="info__tabs tabs" data-aos="fade-right">
+		<div class="info__tabs tabs scroll-text">
 			<a href="#" class="tabs__item current">
 				<span class="tabs__item-name">Структура компании</span>
 				<span class="tabs__item-score">14</span>
@@ -717,10 +642,10 @@
 				<span class="tabs__item-score">08</span>
 			</a>
 		</div>
-		<div class="info__body" data-aos="fade-left">
+		<div class="info__body">
 			<div class="info__body-item tabs__body-item show">
 				<div class="info__docs">
-					<ul class="info__docs-list" data-simplebar>
+					<ul class="info__docs-list scroll-text">
 						<li class="info__docs-item">
 							<a href="#" class="info__docs-link">
 								<div class="info__docs-icon">
@@ -934,7 +859,7 @@
 			</div>
 			<div class="info__body-item tabs__body-item">
 				<div class="info__docs">
-					<ul class="info__docs-list" data-simplebar>
+					<ul class="info__docs-list scroll-text">
 						<li class="info__docs-item">
 							<a href="#" class="info__docs-link">
 								<div class="info__docs-icon">
@@ -1149,15 +1074,9 @@
 	</div>
 </section>
 
-				<div class="main-margins"></div>
-				<div class="main-margins"></div>
-				<section class="releases" data-anchor="releases">
-	<h2 class="releases__title title" data-aos="fade-down">Пресс-релизы</h2>
-	<div
-		id="releases_slider"
-		class="releases__slider swiper"
-		data-aos="fade-left"
-	>
+			<section class="releases section_right" data-anchor="releases">
+	<h2 class="releases__title title">Пресс-релизы</h2>
+	<div id="releases_slider" class="releases__slider swiper">
 		<div class="swiper-wrapper">
 			<a href="#" class="swiper-slide releases-item">
 				<div class="releases-item__head">
@@ -1255,51 +1174,54 @@
 	</div>
 </section>
 
-				<div class="main-margins"></div>
-				<section class="contacts" data-anchor="contacts">
-	<h2 class="title contacts__title" data-aos="fade-down">Контакты</h2>
-	<div id="map" class="contacts__map" data-aos="fade-left"></div>
-	<div class="contacts__adress" data-aos="fade-up">
-		<h4 class="contacts__adress-name title">
-			Дальневосточное Производственно-геологическое объединение
-		</h4>
-		<div class="contacts__adress-info">
-			<div class="contacts__adress-row">
-				<h5 class="contacts__adress-adress title">
-					680041, г. Хабаровск, ул. Балашовская, д.15
-				</h5>
-			</div>
-			<div class="contacts__adress-row contacts__adress-phones">
-				<a href="tel:+74232407908" class="contacts__adress-phone">
-					+7 (4232) 40-79-08
-				</a>
-				<a href="tel:+74232407908" class="contacts__adress-phone">
-					+7 (4232) 40-79-08
-				</a>
-				<a href="tel:" class="contacts__adress-phone">+74212591230</a>
-			</div>
-			<div class="contacts__adress-row">
-				<a
-					href="mailto:dpgo@rusgeology.ru"
-					class="contacts__adress-mail"
-				>
-					dpgo@rusgeology.ru
-				</a>
+			<section class="contacts section_right" data-anchor="contacts">
+	<h2 class="title contacts__title">Контакты</h2>
+	<div id="map" class="contacts__map"></div>
+	<div class="contacts__inner scroll-text">
+		<div class="contacts__adress">
+			<h4 class="contacts__adress-name title">
+				Дальневосточное Производственно-геологическое объединение
+			</h4>
+			<div class="contacts__adress-info">
+				<div class="contacts__adress-row">
+					<h5 class="contacts__adress-adress title">
+						680041, г. Хабаровск, ул. Балашовская, д.15
+					</h5>
+				</div>
+				<div class="contacts__adress-row contacts__adress-phones">
+					<a href="tel:+74232407908" class="contacts__adress-phone">
+						+7 (4232) 40-79-08
+					</a>
+					<a href="tel:+74232407908" class="contacts__adress-phone">
+						+7 (4232) 40-79-08
+					</a>
+					<a href="tel:" class="contacts__adress-phone"
+						>+74212591230</a
+					>
+				</div>
+				<div class="contacts__adress-row">
+					<a
+						href="mailto:dpgo@rusgeology.ru"
+						class="contacts__adress-mail"
+					>
+						dpgo@rusgeology.ru
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-			</main>
 		</div>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/5.0.1/smooth-scrollbar.js"
+			integrity="sha512-fNprFnoeUomE0+m0nYtgoIrlUm81yW4dtuBVhMluVYlbpYEGMfEbUJJN4muTYiltfmDyWkQ5TpmwmIhdFK7qEA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 		<script src="js/libs/simple-webp.min.js"></script>
-		<script src="js/libs/aos.min.js"></script>
-		<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
-		<script
-			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-			defer
-		></script>
+		<script src="https://unpkg.com/pageable@latest/dist/pageable.min.js"></script>
 		<script src="js/script.js" type="module" defer></script>
 	</body>
 </html>

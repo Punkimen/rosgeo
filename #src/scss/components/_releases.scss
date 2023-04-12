@@ -1,9 +1,9 @@
 .releases {
   padding: 90px 0 90px;
-  grid-column: 3/5;
+
 
   @media(max-width:$md4) {
-    padding: 45px 0 45px var(--space-sm);
+    padding: var(--header-height) 0 45px var(--space-sm);
   }
 
   &__title {
@@ -18,6 +18,10 @@
     padding-top: 136px;
     position: relative;
     margin-top: -130px;
+
+    @media(max-height: 700px) and (min-width:$md4) {
+      padding-top: 90px;
+    }
   }
 
   &__slider-btns {
