@@ -176,6 +176,24 @@
 
   &__text {
     height: 20px;
+    display: flex;
+
+    .word {
+      display: flex;
+      min-width: 5px;
+
+      .letter {
+        &.anim {
+
+          animation: opacityIn .3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+        }
+
+        &.anim_1 {
+          animation-delay: 0.5s;
+          animation: opacityIn .3s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+        }
+      }
+    }
 
     @media(max-width:$md4) {
       height: auto;
@@ -225,7 +243,6 @@
     width: fit-content;
     transform: rotate(-90deg);
     line-height: 1em;
-    animation: flash 1 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
   }
 }
 

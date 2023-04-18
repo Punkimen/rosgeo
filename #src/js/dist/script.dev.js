@@ -71,7 +71,6 @@ document.addEventListener("DOMContentLoaded", function () {
       navParent.classList.add("navigation");
       navParent.append((0, _navigation.createNavigation)(_navigation.navigationAnchors));
       (0, _scrollNavigation.navInit)();
-      console.log(this);
       var div = document.createElement("div");
       div.className = "scroll-nav__top";
       div.innerHTML = "<div class=\"scroll-nav__score\">\n\t\t\t\t<span class=\"current-score\">01</span> /\n\t\t\t\t<span class=\"total-score\">07</span>\n\t\t\t</div>";
@@ -104,7 +103,6 @@ document.addEventListener("DOMContentLoaded", function () {
   pageSlider.on("scroll.start", function (data) {
     (0, _navigation.setCurrent)(data.index - 1);
     (0, _navigation.showHideNav)(data.index);
-    console.log(data);
     (0, _scrollNavigation.screenInit)(data.index, pageSlider.anchors.length);
   });
   var scrollBarElems = document.querySelectorAll(".scroll-text");

@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			navParent.classList.add("navigation");
 			navParent.append(createNavigation(navigationAnchors));
 			navInit();
-			console.log(this);
+
 			const div = document.createElement("div");
 			div.className = "scroll-nav__top";
 			div.innerHTML = `<div class="scroll-nav__score">
@@ -110,7 +110,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	pageSlider.on("scroll.start", (data) => {
 		setCurrent(data.index - 1);
 		showHideNav(data.index);
-		console.log(data);
 		screenInit(data.index, pageSlider.anchors.length);
 	});
 
