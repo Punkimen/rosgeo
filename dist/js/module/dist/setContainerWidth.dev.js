@@ -9,7 +9,7 @@ var setContainerWidth = function setContainerWidth(el) {
   var direction = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "centered";
   var container = el;
   var screenWidth = window.innerWidth;
-  var paddingWidth = (screenWidth - 1200) / 2 > 15 ? (screenWidth - 1200) / 2 : 15;
+  var paddingWidth = (screenWidth - 1000) / 2 > 15 ? (screenWidth - 1000) / 2 : 15;
 
   if (direction) {
     switch (direction) {

@@ -25,7 +25,9 @@
     margin-bottom: 32px;
   }
 
-  &__body {}
+  &__body {
+    margin: -10px;
+  }
 
   &__body-item {}
 
@@ -38,15 +40,12 @@
       height: 55vh;
     }
 
-    .simplebar-content {
-      display: flex;
-      flex-wrap: wrap;
-      margin: -10px;
-    }
   }
 
   &__body-link {
     margin: 10px;
+    display: inline-block;
+    width: fit-content;
   }
 }
 

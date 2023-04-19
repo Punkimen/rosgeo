@@ -854,6 +854,10 @@ h6.title {
   margin-bottom: 32px;
 }
 
+.activity__body {
+  margin: -10px;
+}
+
 .activity__works {
   height: 40vh;
   min-height: 250px;
@@ -861,14 +865,11 @@ h6.title {
   max-height: fit-content;
 }
 
-.activity__works .simplebar-content {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -10px;
-}
-
 .activity__body-link {
   margin: 10px;
+  display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .derictions {

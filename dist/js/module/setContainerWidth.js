@@ -2,7 +2,7 @@ export const setContainerWidth = (el, direction = "centered") => {
 	const container = el;
 	const screenWidth = window.innerWidth;
 	const paddingWidth =
-		(screenWidth - 1200) / 2 > 15 ? (screenWidth - 1200) / 2 : 15;
+		(screenWidth - 1000) / 2 > 15 ? (screenWidth - 1000) / 2 : 15;
 
 	if (direction) {
 		switch (direction) {
