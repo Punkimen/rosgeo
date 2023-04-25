@@ -13,17 +13,35 @@ var initSlider = function initSlider() {
   // });
   // history slider
   var historyPhotoSlider = new Swiper("#history_photo_slider", {
-    slidesPerView: 1,
-    navigation: {
-      nextEl: ".history__slider-btn.slider-btn_next",
-      prevEl: ".history__slider-btn.slider-btn_prev"
-    }
+    slidesPerView: 1 // navigation: {
+    // 	nextEl: ".history__slider-btn.slider-btn_next",
+    // 	prevEl: ".history__slider-btn.slider-btn_prev",
+    // },
+
   });
   var historyInfoSlider = new Swiper("#history_info_slider", {
     slidesPerView: "auto"
   });
-  historyPhotoSlider.controller.control = historyInfoSlider;
-  historyInfoSlider.controller.control = historyPhotoSlider; // direction slider
+  var historyBtns = document.querySelectorAll(".history__slider-btn");
+  historyBtns.forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      if (e.target.classList.contains("slider-btn_next")) {
+        historyPhotoSlider.slideNext();
+        historyInfoSlider.slideNext();
+      } else {
+        historyPhotoSlider.slidePrev();
+        historyInfoSlider.slidePrev();
+      }
+    });
+  });
+
+  if (historyPhotoSlider.slides.length === historyInfoSlider.slides.length) {
+    historyPhotoSlider.controller.control = historyInfoSlider;
+    historyInfoSlider.controller.control = historyPhotoSlider;
+  } // direction slider
+
 
   var directionSlider = new Swiper("#direction_slider", {
     slidesPerView: "auto",

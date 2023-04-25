@@ -32,12 +32,11 @@
   &__body-item {}
 
   &__works {
-    height: 40vh;
+    max-height: 40vh;
     min-height: 250px;
-    max-height: fit-content;
 
     @media(max-width:$md3) {
-      height: 55vh;
+      max-height: 55vh;
     }
 
   }

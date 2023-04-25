@@ -6,11 +6,11 @@
   // padding: 90px 0 90px;
   &__inner {
     min-height: 100px;
-    height: 34vh;
+    max-height: 34vh;
     overflow: auto;
 
     @media(max-width:$md3) and (max-height: 640px) {
-      height: 34vh;
+      max-height: 34vh;
       overflow: auto;
     }
 
@@ -30,8 +30,7 @@
     }
 
     @media(max-width: 400px) and (max-height:620px) {
-      max-height: auto;
-      height: 38vh;
+      max-height: 38vh;
     }
   }
 

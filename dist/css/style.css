@@ -592,7 +592,7 @@ h6.title {
 
 .about__body-text {
   min-height: 100px;
-  height: 40vh;
+  max-height: 40vh;
 }
 
 .about__body-text .simplebar-content {
@@ -859,10 +859,8 @@ h6.title {
 }
 
 .activity__works {
-  height: 40vh;
+  max-height: 40vh;
   min-height: 250px;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
 }
 
 .activity__body-link {
@@ -976,7 +974,7 @@ h6.title {
 
 .info__docs-list {
   min-height: 200px;
-  height: 40vh;
+  max-height: 40vh;
 }
 
 .info__docs-link {
@@ -1089,7 +1087,7 @@ h6.title {
 
 .contacts__inner {
   min-height: 100px;
-  height: 34vh;
+  max-height: 34vh;
   overflow: auto;
 }
 
@@ -1357,7 +1355,7 @@ scrollbar .scrollbar-thumb {
   }
 
   .activity__works {
-    height: 55vh;
+    max-height: 55vh;
   }
 
   .derictions__head {
@@ -1403,7 +1401,7 @@ scrollbar .scrollbar-thumb {
   }
 
   .info__docs-list {
-    height: 50vh;
+    max-height: 50vh;
   }
 
   .releases__slider-btns {
@@ -1451,7 +1449,7 @@ scrollbar .scrollbar-thumb {
 
 @media (max-width: 1024px) and (min-height: 700px) {
   .about__body-text {
-    height: 55vh;
+    max-height: 55vh;
   }
 
   .about__adresses {
@@ -1461,7 +1459,7 @@ scrollbar .scrollbar-thumb {
 
 @media (max-height: 700px) and (max-width: 1024px) {
   .about__body-text {
-    height: 50vh;
+    max-height: 50vh;
   }
 
   .about__adresses {
@@ -1471,7 +1469,7 @@ scrollbar .scrollbar-thumb {
 
 @media (max-width: 1024px) and (max-height: 640px) {
   .contacts__inner {
-    height: 34vh;
+    max-height: 34vh;
     overflow: auto;
   }
 }
@@ -1728,8 +1726,7 @@ scrollbar .scrollbar-thumb {
 
 @media (max-width: 400px) and (max-height: 620px) {
   .contacts__inner {
-    max-height: auto;
-    height: 38vh;
+    max-height: 38vh;
   }
 }
 
@@ -1775,7 +1772,7 @@ scrollbar .scrollbar-thumb {
 
 @media (min-height: 800px) {
   .about__body-text {
-    height: 60vh;
+    max-height: 60vh;
   }
 
   .about__adresses {
@@ -1783,7 +1780,7 @@ scrollbar .scrollbar-thumb {
   }
 
   .info__docs-list {
-    height: 63vh;
+    max-height: 63vh;
   }
 
   .contacts__inner {
@@ -1794,7 +1791,7 @@ scrollbar .scrollbar-thumb {
 
 @media (max-height: 600px) {
   .about__body-text {
-    height: auto;
+    max-height: auto;
   }
 
   .about__adresses {

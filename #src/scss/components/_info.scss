@@ -67,14 +67,14 @@
 
   &__docs-list {
     min-height: 200px;
-    height: 40vh;
+    max-height: 40vh;
 
     @media(min-height: 800px) {
-      height: 63vh;
+      max-height: 63vh;
     }
 
     @media(max-width:$md3) {
-      height: 50vh;
+      max-height: 50vh;
     }
   }
 
